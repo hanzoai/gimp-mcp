@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="gimp-mcp" width="880"></p>
+
 # hanzo-gimp-mcp
 
 A **clean-room, BSD-3-licensed** bridge that lets external tools drive
