@@ -1,0 +1,10 @@
+# GIMP-side bridge script — copied into GIMP's plug-ins directory, never built.
+# Gate: it compiles. Importing it is not possible off-host (it binds GIMP's
+# GObject namespace, which exists only inside GIMP), so the parse is the whole of
+# what a push can honestly assert — and it is the failure this file can actually
+# have.
+test:
+  - name: compile
+    run: |
+      set -euo pipefail
+      python3 -m compileall -q hanzo_gimp_bridge.py
